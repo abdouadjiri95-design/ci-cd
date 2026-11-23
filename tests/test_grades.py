@@ -49,6 +49,16 @@ class TestMention(unittest.TestCase):
         self.assertEqual(mention(14), "Bien")
         self.assertEqual(mention(20), "Bien")
 
+class TestMaxGrade(unittest.TestCase):
+    def test_liste_vide_retourne_none(self):
+        self.assertIsNone(max_grade([]))
+
+    def test_retourne_la_plus_grande_note(self):
+        self.assertEqual(max_grade([5, 18, 12]), 18)
+
+    def test_une_seule_note(self):
+        self.assertEqual(max_grade([14]), 14)
+
 
 if __name__ == "__main__":
     unittest.main()

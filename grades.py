@@ -20,3 +20,9 @@ def mention(avg):
     if avg < 14:
         return "Moyen"
     return "Bien"
+
+def max_grade(values):
+"""Retourne la plus grande note ou None."""
+if not values:
+return None
+return max(values)
