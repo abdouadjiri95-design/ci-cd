@@ -1,6 +1,6 @@
 import unittest
 
-from grades import clean_grades, average, mention
+from grades import clean_grades, average, mention,max_grade
 
 
 class TestCleanGrades(unittest.TestCase):
