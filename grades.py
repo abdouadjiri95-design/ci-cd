@@ -22,7 +22,7 @@ def mention(avg):
     return "Bien"
 
 def max_grade(values):
-"""Retourne la plus grande note ou None."""
-if not values:
-return None
-return max(values)
+      """Retourne la plus grande note ou None."""
+      if not values:
+      return None
+      return max(values)
